@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi: Pengurangan Pengabaian Keranjang Belanja dalam E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004d40;
+        }
+        .issue {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #004080;
+            margin-top: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+        .hidden {
+            display: none;
+        }
+        #cartSimulation {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #cartSimulation th, #cartSimulation td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #cartSimulation th {
+            background-color: #f2f2f2;
+            }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Solusi untuk Masalah dalam E-commerce</h1>
+    <p>Halaman ini menampilkan solusi untuk masalah-masalah umum dalam e-commerce dengan contoh kasus dan implementasi yang jelas.</p>
+</div>
+<div class="container">
+    <div class="issue">
+        <h2>Solusi: Pengurangan Pengabaian Keranjang Belanja</h2>
+        <p>Menerapkan strategi untuk mengurangi tingkat pengabaian keranjang belanja, seperti reminder belanja yang terpersonalisasi dan kemudahan checkout.</p>
+        <button class="btn" onclick="implementCartReduction()">Implementasikan Solusi</button>
+        <div id="cartReductionDetails" class="hidden">
+            <h3>Studi Kasus</h3>
+            <p>Kasus: Situs e-commerce GHI mengalami tingkat tinggi pengabaian keranjang belanja. Setelah menerapkan reminder belanja yang efektif, mereka berhasil meningkatkan konversi penjualan.</p>
+            <h3>Contoh Implementasi</h3>
+            <table id="cartSimulation">
+                <tr>
+                    <th>Pelanggan</th>
+                    <th>Keranjang Belanja</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Pelanggan A</td>
+                    <td id="cartA">Ada</td>
+                    <td id="statusA">Aktif</td>
+                </tr>
+                <tr>
+                    <td>Pelanggan B</td>
+                    <td id="cartB">Kosong</td>
+                    <td id="statusB">Tidak Aktif</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class="btn" onclick="window.location.href='masalah.html'">Kembali ke Masalah</button>
+</div>
+<script>
+    function implementCartReduction() {
+        document.getElementById("cartReductionDetails").classList.remove("hidden");
+        alert("Solusi: Strategi untuk mengurangi pengabaian keranjang belanja telah diimplementasikan.");
+
+        // Simulasi pembaruan status keranjang belanja
+        document.getElementById("cartA").innerText = "Kosong";
+        document.getElementById("statusA").innerText = "Tidak Aktif";
+        document.getElementById("cartB").innerText = "Ada";
+        document.getElementById("statusB").innerText = "Aktif";
+    }
+</script>
+</body>
+</html>
