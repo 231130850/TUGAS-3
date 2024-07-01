@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .security-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .security-table th, .security-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Security</h1>
+    </header>
+    <main>
+        <h2>Ensure the security of customer data</h2>
+        <p>Content related to security goes here.</p>
+        <table class="security-table">
+            <tr>
+                <th>Security Measure</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <!-- Dynamic data goes here -->
+        </table>
+        <button id="encrypt-data">Encrypt Data</button>
+        <script>
+            const encryptDataButton = document.getElementById('encrypt-data');
+            encryptDataButton.addEventListener('click', () => {
+                // Implement encryption logic here
+                console.log('Data encrypted!');
+            });
+        </script>
+        <button id="back-to-home">Back to Home</button>
+        <script>
+            const backToHomeButton = document.getElementById('back-to-home');
+            backToHomeButton.addEventListener('click', () => {
+                window.location.href = '../new3/dashboard.html';
+            });
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Universitas Mikroskil</p>
+    </footer>
+</body>
+</html>

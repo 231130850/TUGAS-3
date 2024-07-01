@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .user-experience-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .user-experience-table th, .user-experience-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Experience</h1>
+    </header>
+    <main>
+        <h2>Enhance the user experience</h2>
+        <p>Content related to user experience goes here.</p>
+        <table class="user-experience-table">
+            <tr>
+                <th>UX Measure</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <!-- Dynamic data goes here -->
+        </table>
+        <button id="enhance-ux">Enhance UX</button>
+        <script>
+            const enhanceUXButton = document.getElementById('enhance-ux');
+            enhanceUXButton.addEventListener('click', () => {
+                // Implement UX enhancement logic here
+                console.log('UX enhanced!');
+            });
+        </script>
+        <button id="back-to-home">Back to Home</button>
+        <script>
+            const backToHomeButton = document.getElementById('back-to-home');
+            backToHomeButton.addEventListener('click', () => {
+                window.location.href = '../new3/dashboard.html';
+            });
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Universitas Mikroskil</p>
+    </footer>
+</body>
+</html>
