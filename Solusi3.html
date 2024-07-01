@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi: Infrastruktur Skalabel dalam E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004d40;
+        }
+        .issue {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #004080;
+            margin-top: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+        .hidden {
+            display: none;
+        }
+        #trafficSimulation {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #trafficSimulation th, #trafficSimulation td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #trafficSimulation th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Solusi untuk Masalah dalam E-commerce</h1>
+    <p>Halaman ini menampilkan solusi untuk masalah-masalah umum dalam e-commerce dengan contoh kasus dan implementasi yang jelas.</p>
+</div>
+
+<div class="container">
+    <div class="issue">
+        <h2>Solusi: Infrastruktur Skalabel</h2>
+        <p>Menerapkan infrastruktur cloud yang skalabel untuk menangani lonjakan lalu lintas, memastikan situs tetap online selama puncak beban.</p>
+        <button class="btn" onclick="implementScalability()">Implementasikan Solusi</button>
+        <div id="scalabilityDetails" class="hidden">
+            <h3>Studi Kasus</h3>
+            <p>Kasus: Perusahaan DEF mengalami downtime saat penjualan besar. Setelah beralih ke infrastruktur cloud yang skalabel, mereka mampu menangani lalu lintas tinggi tanpa masalah.</p>
+            <h3>Contoh Implementasi</h3>
+            <table id="trafficSimulation">
+                <tr>
+                    <th>Waktu</th>
+                    <th>Lalu Lintas</th>
+                    <th>Status Server</th>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>100 pengguna</td>
+                    <td id="status0900">Normal</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>1000 pengguna</td>
+                    <td id="status1200">Normal</td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td>5000 pengguna</td>
+                    <td id="status1500">Normal</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class="btn" onclick="window.location.href='masalah.html'">Kembali ke Masalah</button>
+</div>
+
+<script>
+    function implementScalability() {
+        document.getElementById("scalabilityDetails").classList.remove("hidden");
+        alert("Solusi: Infrastruktur cloud yang skalabel telah diaktifkan.");
+
+        // Simulasi pembaruan status server
+        document.getElementById("status0900").innerText = "Normal";
+        document.getElementById("status1200").innerText = "Normal";
+        document.getElementById("status1500").innerText = "Normal";
+    }
+</script>
+
+</body>
+</html>

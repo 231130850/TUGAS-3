@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi: Keamanan Data dalam E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004d40;
+        }
+        .issue {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #004080;
+            margin-top: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Solusi untuk Masalah dalam E-commerce</h1>
+    <p>Halaman ini menampilkan solusi untuk masalah-masalah umum dalam e-commerce dengan contoh kasus dan implementasi yang jelas.</p>
+</div>
+
+<div class="container">
+    <div class="issue">
+        <h2>Solusi: Enkripsi Data End-to-End</h2>
+        <p>Terapkan enkripsi data end-to-end dan langkah-langkah keamanan tambahan seperti otentikasi dua faktor dan pemindaian rutin untuk mendeteksi dan mencegah ancaman keamanan.</p>
+        <button class="btn" onclick="implementSecurity()">Implementasikan Solusi</button>
+        <div id="securityDetails" class="hidden">
+            <h3>Studi Kasus</h3>
+            <p>Kasus: Perusahaan ABC mengalami beberapa insiden keamanan data. Setelah menerapkan enkripsi end-to-end dan otentikasi dua faktor, mereka berhasil mengurangi insiden tersebut.</p>
+            <h3>Contoh Implementasi</h3>
+            <p>Data Pelanggan (sebelum enkripsi): <span id="dataBefore">1234-5678-9012-3456</span></p>
+            <p>Data Pelanggan (setelah enkripsi): <span id="dataAfter">****-****-****-3456</span></p>
+        </div>
+    </div>
+    <button class="btn" onclick="window.location.href='masalah.html'">Kembali ke Masalah</button>
+</div>
+
+<script>
+    function implementSecurity() {
+        document.getElementById("securityDetails").classList.remove("hidden");
+        alert("Solusi: Implementasi enkripsi data end-to-end telah diaktifkan.");
+    }
+</script>
+
+</body>
+</html>
