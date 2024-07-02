@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3eddf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .register-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .register-container input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .register-container button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-container">
+        <h2>Create a New Account</h2>
+        <h3>E-Commerce  Platform</h3>
+        <form id="registerForm">
+            <input type="email" id="registerEmail" placeholder="Email" required />
+            <input type="password" id="registerPassword" placeholder="Password" required />
+            <button type="button" id="Register">Register</button>
+        </form>
+    </div>
+
+    <script>
+        var registeredEmails = JSON.parse(localStorage.getItem("registeredEmails")) || [];
+
+        var btn = document.querySelector("#Register");
+        btn.addEventListener("click", function () {
+            let email = document.querySelector("#registerEmail").value;
+            let password = document.querySelector("#registerPassword").value;
+
+            if (email === "") {
+                alert("Silakan isi email Anda.");
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                alert("Format email tidak valid.");
+            } else if (password === "") {
+                alert("Silakan isi password Anda.");
+            } else if (password.length < 6) {
+                alert("Password harus memiliki minimal 6 karakter.");
+            } else if (password.length > 16) {
+                alert("Password tidak boleh lebih dari 16 karakter.");
+            } else if (registeredEmails.includes(email)) {
+                alert("Email sudah terdaftar. Silakan login.");
+                window.location.href = "login.html"; // Redirect to login page
+            } else {
+                registeredEmails.push(email);
+                localStorage.setItem("registeredEmails", JSON.stringify(registeredEmails));
+                console.log("Registrasi berhasil");
+                alert("Registrasi berhasil. Silakan login.");
+                window.location.href = "login.html";
+            }
+        });
+    </script>
+</body>
+
+</html>
