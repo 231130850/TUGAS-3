@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #4feb90;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -87,17 +87,21 @@
             let password = document.querySelector("#passwordInput").value;
 
             if (email === "") {
-                alert("Please enter your email.");
+                alert("Silahkan masukkan Email anda.");
             } else if (!/\S+@\S+\.\S+/.test(email)) {
-                alert("Invalid email format.");
+                alert("Format Email tidak Valid.");
             } else if (password === "") {
-                alert("Please enter your password.");
+                alert("Masukkan Password.");
+            } else if (password.length < 6) {
+                alert("Password harus memiliki minimal 6 karakter.");
+            } else if (password.length > 16) {
+                alert("Password tidak boleh lebih dari 16 karakter.");
             } else {
                 if (!registeredEmails.includes(email)) {
-                    alert("Account not found. Please register first.");
-                    window.location.href = "Register.html";
+                alert("Email tidak terdaftar. Silakan register.");
+                window.location.href = "register.html"
                 } else {
-                    alert("Login successful.");
+                    alert("Login Berhasil.");
                     window.location.href = "Dashboard.html";
                 }
             }
