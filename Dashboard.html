@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            width: 250px;
+        }
+        .sidebar h2 {
+            margin: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+        }
+        .main-content header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-content nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .main-content nav ul li {
+            margin: 0 10px;
+        }
+        .main-content nav ul li a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .eshop {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 22px;
+            font-size: 50px;
+        }
+
+        .eshop img {
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>E-commerce Dashboard</h2>
+            <ul>
+                <li><a href="masalah.html">Masalah yang sering Terjadi DiE-commerce</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Proyek E-commerce</h1>
+                <nav>
+                    <ul>
+                        <li><a href="Inventory.html">Inventory Management</a></li>
+                        <li><a href="Security.html">Security</a></li>
+                        <li><a href="Scability.html">Scalability</a></li>
+                        <li><a href="AbandonedCarts.html">Abandoned Carts</a></li>
+                        <li><a href="UserExperience.html">User Experience</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="content">
+                <h2>Welcome to E-Commerce Dashboard</h2>
+                <div class="eshop">
+                    <img src="./Keranjang.png" alt="Keranjang">
+                    <h3>E-Shop</h3>
+                </div> 
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Universitas Mikroskil</p>
+    </footer>
+    <script>
+        const newButton = document.getElementById('new-button');
+        newButton.addEventListener('click', () => {
+          window.location.href = 'Masalah.html';
+        });
+      </script>
+</body>
+</html>
